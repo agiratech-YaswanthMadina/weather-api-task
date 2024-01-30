@@ -6,6 +6,7 @@ require('dotenv').config();
 const api_key = process.env.api_key;
 
 const port = 3033;
+const a = 10;
 app.get('/', function (req, res) {
     const address = req.query.address;
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${address}&units=metric&appid=${api_key}`;
